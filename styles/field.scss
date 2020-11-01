@@ -1,0 +1,58 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 2.4rem;
+
+  > label {
+    font-weight: 700;
+    color: #D4D9DD;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: .5em;
+  }
+
+  > input {
+    border: 1px solid #DDE3E8;
+    border-radius: 3px;
+    padding: 1em 1.625em;
+    font-size: 1.6rem;
+    outline: none;
+
+    &:focus, &:active {
+      border-color: #71B6EF;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    bottom: 0;
+    color: $active-color;
+    font-size: 1.2rem;
+  }
+
+  &__select-container {
+    font-size: 1.6rem;
+  }
+
+  &__select__control {
+    border: 1px solid #DDE3E8 !important;
+    outline: none;
+
+    &--is-focused {
+      box-shadow: none !important;
+      border-color: #71B6EF !important;
+    }
+  }
+
+  &__select__value-container {
+    font-size: 1.6rem;
+    line-height: 1;
+    padding: 1em 1.625em !important;
+
+    > div {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}

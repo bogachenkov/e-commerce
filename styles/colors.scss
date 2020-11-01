@@ -1,0 +1,40 @@
+.colors {
+  margin: 5em 0;
+
+  &__heading {
+    font-size: 1.6rem;
+    margin-bottom: 2em;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    @include flex-center;
+    position: relative;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: .3s;
+    color: #ffffff;
+    box-shadow: var(--focused);
+
+    &:hover {
+      box-shadow: 0 0 6px 1px #ccc;
+    }
+
+    > input[type="checkbox"] {
+      cursor: pointer;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  }
+}

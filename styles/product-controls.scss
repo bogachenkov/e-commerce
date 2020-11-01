@@ -1,0 +1,14 @@
+.product-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  position: sticky;
+  top: 80px;
+  z-index: 500;
+
+  &__itemsQty {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,27 @@
+.modal {
+  background-color: #ffffff;
+  padding: 5em 4em;
+  border-radius: 5px;
+  border: 2px solid #F8FAFB;
+  outline: none;
+  width: 920px;
+  max-height: calc(100vh - 10rem);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__overlay {
+    @include flex-center;
+    z-index: 700;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .75);
+  }
+}

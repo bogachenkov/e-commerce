@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:wght@300;400;500;700&display=swap');
+
+html,
+body {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, -apple-system, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-width: 1200px;
+}
+
+$font-color: #1B2125;
+$form-link-color: #788995;
+$active-color: tomato;
+$btn-color: #afafaf;
+$bg-light-color: #f0f6fa;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-h2 {
+  font-size: 2.2rem;
+}
+
+
+@import './app-header.scss';
+@import './app-wrapper.scss';
+@import './button.scss';
+@import './categories.scss';
+@import './checkout-form.scss';
+@import './checkout-page.scss';
+@import './colors.scss';
+@import './content-grid.scss';
+@import './empty-cart.scss';
+@import './filters.scss';
+@import './field.scss';
+@import './modal.scss';
+@import './navigation.scss';
+@import './price.scss';
+@import './product-card.scss';
+@import './product-controls.scss';
+@import './product-grid.scss';
+@import './product-page.scss';
+@import './product-skeleton.scss';
+@import './product.scss';
+@import './purchased.scss';
+@import './related-items.scss';
+@import './shopping-cart.scss';
+@import './sort-by.scss';
+@import './spiner.scss';

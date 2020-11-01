@@ -1,0 +1,22 @@
+.empty-cart {
+  @include flex-center;
+  width: 100%;
+  height: calc(100vh - 80px);
+  flex-flow: column;
+
+  &__image {
+    height: 349px;
+  }
+
+  &__message {
+    font-size: 3rem;
+    margin: 2em 0;
+    color: #aab0c7;
+    text-transform: capitalize;
+  }
+
+  &__button {
+    align-self: center;
+    background-color: #e0e4f0;
+  }
+}

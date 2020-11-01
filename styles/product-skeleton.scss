@@ -1,0 +1,120 @@
+$base-color: #dddddd;
+$shine-color: #e8e8e8;
+$animation-duration: 3s;
+$avatar-offset: 460 + 20;
+
+@mixin background-gradient {
+  background-image: linear-gradient(90deg, $base-color 0px, $shine-color 40px, $base-color 120px);
+  background-size: 600px;
+}
+
+.product-skeleton {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  div {
+    border-radius: 3px;
+  }
+
+  &__rating {
+    margin: 1rem 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 597px;
+    object-position: center;
+    object-fit: cover;
+
+    @include background-gradient;
+    animation: shine-lines $animation-duration infinite linear;
+  }
+
+  &__name {
+    width: 150px;
+    height: 3.2rem;
+    margin: 2.158rem 0;
+    @include background-gradient;
+    animation: shine-lines $animation-duration infinite linear;
+    animation-delay: 1.2s;
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+      height: 2.8rem;
+      @include background-gradient;
+      animation: shine-lines $animation-duration infinite linear;
+      animation-delay: 1.2s;
+
+      &:first-child {
+        width: 30px;
+      }
+
+      &:last-child {
+        width: 100px;
+        animation-delay: 2s;
+      }
+    }
+  }
+
+  &__description {
+    border-top: 1px solid #E4EAEE;
+    border-bottom: 1px solid #E4EAEE;
+    padding: 2.4rem 0;
+    margin: 2.4rem 0;
+
+    > div {
+      height: 1.6rem;
+      margin: 1.4rem 0;
+      @include background-gradient;
+      animation: shine-lines $animation-duration infinite linear;
+      animation-delay: 1.2s;
+
+      &:last-child {
+        width: 50%;
+      }
+    }
+  }
+
+  &__categories {
+    border-bottom: 1px solid #E4EAEE;
+    padding-bottom: 2.4rem;
+    margin-bottom: 2.4rem;
+
+    > div {
+      height: 1.4rem;
+      margin: 1.2rem;
+      width: 120px;
+      @include background-gradient;
+      animation: shine-lines $animation-duration infinite linear;
+      animation-delay: 1.2s;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__button {
+    height: 53px;
+    @include background-gradient;
+    animation: shine-lines $animation-duration infinite linear;
+    animation-delay: 1.2s;
+  }
+}
+
+@keyframes shine-lines {
+  0% {
+    background-position: -50px;
+  }
+  40%, 100% {
+    background-position: 420px;
+  }
+}

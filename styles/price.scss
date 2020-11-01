@@ -1,0 +1,29 @@
+.price {
+  margin: 5em 0;
+
+  &__heading {
+    font-size: 1.6rem;
+  }
+
+  &__range {
+    @include flex-center;
+    padding: 1.5em 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__values {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__value {
+    width: 70px;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 1.2rem;
+    padding: .5em 1em;
+    color: #000;
+  }
+}

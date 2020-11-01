@@ -1,0 +1,25 @@
+.categories {
+  margin: 5em 0;
+
+  &__heading {
+    font-size: 1.6rem;
+    margin-bottom: 2em;
+  }
+
+  &__item {
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 1.4rem;
+
+
+    &:hover, &:active, &:focus {
+      color: $active-color;
+    }
+
+    &-selected {
+      font-weight: 700;
+      color: $active-color;
+    }
+  }
+}

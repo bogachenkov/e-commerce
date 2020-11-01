@@ -1,0 +1,25 @@
+.product-page {
+  padding: 2.5em 0;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: .3s;
+    color: $font-color;
+
+    > svg {
+      margin-right: .5em;
+    }
+
+    &:hover {
+      color: $active-color;
+    }
+  }
+
+  > .product {
+    margin-top: 4em;
+  }
+}

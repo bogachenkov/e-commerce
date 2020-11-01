@@ -1,0 +1,16 @@
+.sort-by {
+  border: none;
+  font-size: inherit;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: tomato;
+  }
+
+  > option {
+    color: black !important;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,44 @@
+.checkout-form {
+  padding: 5em 0;
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 22px;
+    margin-bottom: 33px;
+
+    > div {
+      flex: 1 0;
+    }
+  }
+
+  &__section {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: $font-color;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    color: $form-link-color;
+    font-size: 1.6rem;
+    transition: .3s;
+
+    > svg {
+      margin-right: .5em;
+    }
+
+    &:hover {
+      color: $active-color;
+    }
+  }
+
+  &__payment input {
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
